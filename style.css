@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:900');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family:Roboto, Arial, sans-serif;
+  font-size: 18px;
+}
+/*Heading style*/
+h1, 
+h2, 
+h3 {
+  font-family:Raleway;
+  text-align:center;
+}
+h1 {
+  font-size:48px;
+  color:#ffffff;
+}
+h2 {
+  font-size:36px;
+  color:#DE6262;
+  padding-top: 16px;
+}
+h3 {
+  font-size:24px;
+  color:#DE6262;
+}
+/*Link style*/
+a {
+  color: #273582;
+}
+a:hover{
+  color:#DE6262;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/*header style*/
+.logo{
+  color: #DE6262;
+  font-family: Raleway;
+  font-size: 24px;
+  padding: 8px 24px;
+}
+.navigace{
+  margin-left: auto; /*hodnota auto tlačí z té uvedené strany co nejvíc pryč, tzn doprava v tomto případě*/
+  font-size: 20px;
+}
+.navigace a{
+  padding: 8px 24px; /*nahoře dole + vlevo vpravo*/
+  display:block;
+}
+
+
+/*úvod style*/
+.uvod{
+  background: linear-gradient(45deg,#de6262c9,#ffb88cce), url(obrazky/vietnam.jfif);
+  text-align:center;
+  color:#fff;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.uvod img{
+  border-radius: 50%;
+}
+/*příběhy (zájmy) style*/
+.pribehy{
+  background-color: #f5f5f5;
+  text-align:center; 
+}
+.pribehy li{
+  padding: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  border: 2px dotted #d3d3d3;
+  width: 33.333%;
+}
+/*contact*/
+.contact img{
+  max-width: 50%;
+}
+/*footer (paticka) style*/
+.footer{
+  background-color: #DE6262;
+  text-align: center;
+  color:#ffffff;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.footer a{
+  color: #FFB88C;
+}
+/* flex-vedle sebe, využívám u headeru, odkazů v headeru a u jednotlivých příběhů */
+.flex{
+  display:flex;
+}
+/* maximální šířka pro všechny části, aby se to nezobrazovalo naprosto příšerně na širokých displejích - potřebuji to odsadit dovnitř
+Nemůžeme odsadit všechno najednou, protože bychom na širokých displejích měli bílé sloupce a ne barevný pruh pozadí */
+.obsah{
+  max-width: 1200px;
+  padding: 24px;
+  margin: auto;
+}
+
